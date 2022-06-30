@@ -1,4 +1,4 @@
 public interface PlayList {
-    void filterByGender();
-    void filterByYear();
+    void filterByGender(String gender);
+    void filterByYear(int year);
 }
