@@ -43,7 +43,7 @@ public class Library implements PlayList {
         ArrayList<Song> filterList = new ArrayList<Song>();
 
         for(Song song: this.getSongs()) {
-            if(song.getDate().getYear() == year) {
+            if(song.getYear() == year) {
                 filterList.add(song);
             }
         }
