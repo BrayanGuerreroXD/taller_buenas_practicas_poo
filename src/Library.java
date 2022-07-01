@@ -11,6 +11,20 @@ public class Library implements PlayList {
         return songs;
     }
 
+    public ArrayList<Song> createPlayList(ArrayList<String> list) {
+        ArrayList<Song> playlist = new ArrayList<Song>();
+
+        for(String name: list) {
+            for(Song song: this.getSongs()) {
+                if(song.getTitle().equals(name)) {
+                    playlist.add(song);
+                }
+            }
+        }
+
+        return playlist;
+    }
+
     @Override
     public ArrayList<Song> filterByGender(String gender) {
         ArrayList<Song> filterList = new ArrayList<Song>();
@@ -28,8 +42,8 @@ public class Library implements PlayList {
     public ArrayList<Song> filterByYear(int year) {
         ArrayList<Song> filterList = new ArrayList<Song>();
 
-        for(Song song: this.getSongs()){
-            if(song.getDate().getYear() == year){
+        for(Song song: this.getSongs()) {
+            if(song.getDate().getYear() == year) {
                 filterList.add(song);
             }
         }
