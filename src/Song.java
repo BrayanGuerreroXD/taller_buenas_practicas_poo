@@ -9,6 +9,16 @@ public class Song {
     private String cover;
     private String description;
 
+    public Song(String title, int id, Date date, float duration, String gender, String cover, String description) {
+        this.title = title;
+        this.id = id;
+        this.date = date;
+        this.duration = duration;
+        this.gender = gender;
+        this.cover = cover;
+        this.description = description;
+    }
+
     public String getTitle() {
         return title;
     }
