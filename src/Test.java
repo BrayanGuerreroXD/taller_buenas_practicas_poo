@@ -40,5 +40,42 @@ public class Test {
         songs.add(new Song("Dos Mil 16", 9, 2022,
                 3.28F, "Reggaeton", "covers/un_verano_sin_ti_cover.jpg",
                 "song of Bad Bunny"));
+
+        songs.add(new Song("Centuries", 10, 2014,
+                3.48F, "Alternative", "covers/centuries_cover.jpg",
+                "song of Fall Out Boy"));
+
+        songs.add(new Song("Sunflower", 11, 2018,
+                2.38F, "Hip Hop", "covers/Sunflower_cover.jpg",
+                "song of Post Malone"));
+
+        songs.add(new Song("Stressed Out", 12, 2015,
+                3.22F, "Alternative", "covers/stressed_out_cover.jpg",
+                "song of Twenty One Pilots"));
+
+        songs.add(new Song("Veronica", 13, 2010,
+                4.13F, "Rock Espanol", "covers/veronica_cover.jpg",
+                "song of Caramelos de Cianuro"));
+
+        songs.add(new Song("Crimen", 14, 2006,
+                3.28F, "Rock Espanol", "covers/crimen_cover.jpg",
+                "song of Gustavo Cerati"));
+
+        songs.add(new Song("Bohemian Rhapsody", 15, 1975,
+                5.54F, "Rock", "covers/bohemian_rhapsody_cover.jpg",
+                "song of Queen"));
+
+        songs.add(new Song("Under the Bridge", 16, 1992,
+                4.24F, "Rock", "covers/under_the_bridge_cover.jpg",
+                "song of Gustavo Red Hot Chili Peppers"));
+
+        songs.add(new Song("Yonaguni", 17, 2021,
+                3.28F, "Reggaeton", "covers/yonaguni_cover.jpg",
+                "song of bad Bunny"));
+
+        songs.add(new Song("Rapper's Delight", 18, 2009,
+                7.10F, "Hip Hop", "covers/rappers_delight_cover.jpg",
+                "song of Sugarhill Gang"));
+
     }
 }
