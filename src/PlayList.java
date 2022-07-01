@@ -1,4 +1,6 @@
+import java.util.ArrayList;
+
 public interface PlayList {
-    void filterByGender(String gender);
-    void filterByYear(int year);
+    ArrayList<Song> filterByGender(String gender);
+    ArrayList<Song> filterByYear(int year);
 }
