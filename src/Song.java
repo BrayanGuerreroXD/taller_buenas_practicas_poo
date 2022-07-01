@@ -4,9 +4,9 @@ public class Song {
     private String title;
     private int id;
     private Date date;
-    private int duration;
+    private float duration;
     private String gender;
-    private String cover; // I don´t know
+    private String cover;
     private String description;
 
     public String getTitle() {
@@ -33,11 +33,11 @@ public class Song {
         this.date = date;
     }
 
-    public int getDuration() {
+    public float getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(float duration) {
         this.duration = duration;
     }
 
