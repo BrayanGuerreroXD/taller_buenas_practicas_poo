@@ -1,9 +1,20 @@
 import java.util.ArrayList;
 
+/**
+ * The main class test creates a manually typed song library
+ *
+ * @author BrayanGuerroXD
+ * @author MoisesCol
+ *
+ */
+
 public class Test {
 
     public static void main(String[] args) {
-        ArrayList<Song> songs = new ArrayList<Song>();
+
+        //manual creation of songs library starts here
+
+        ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("Pumped Up Kicks", 1, 2011,
                 3.59F, "Alternative", "covers/torches_ftp_cover.jpg",
@@ -76,6 +87,9 @@ public class Test {
         songs.add(new Song("Rapper's Delight", 18, 2009,
                 7.10F, "Hip Hop", "covers/rappers_delight_cover.jpg",
                 "song of Sugarhill Gang"));
+
+        //end of songs library creation
+
 
     }
 }
