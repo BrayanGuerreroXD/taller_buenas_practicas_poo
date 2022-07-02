@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Library class which implements playlist interface (abstract methods filterbyGender an filterbyYear)
@@ -86,5 +88,25 @@ public class Library implements PlayList {
         }
 
         return filterList;
+    }
+
+    @Override
+    public void orderByDuration() {
+        Collections.sort(songs, new Comparator<Song>() {
+            @Override
+            public int compare(Song song1, Song song2) {
+                return Float.compare(song1.getDuration(), song2.getDuration());
+            }
+        });
+    }
+
+    @Override
+    public void orderByYear() {
+        Collections.sort(songs, new Comparator<Song>() {
+            @Override
+            public int compare(Song song1, Song song2) {
+                return Integer.compare(song1.getYear(), song2.getYear());
+            }
+        });
     }
 }

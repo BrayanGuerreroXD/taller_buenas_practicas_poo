@@ -93,14 +93,30 @@ public class Test {
 
         //end of songs library creation
 
+        //Testing library class methods
         Library library = new Library(songs);
 
-        System.out.println("Filtrar por genero:");
+        library.getSongs().forEach(System.out::println);
+
+        System.out.println("Filter by gender:");
 
         library.filterByGender("Alternative").forEach(System.out::println);
 
-        System.out.println("Filtrar por año:");
+        System.out.println("");
+        System.out.println("Filter by year:");
 
         library.filterByYear(2021).forEach(System.out::println);
+
+        System.out.println("");
+        System.out.println("Order by Duration:");
+
+        library.orderByDuration();
+        library.getSongs().forEach(System.out::println);
+
+        System.out.println("");
+        System.out.println("Order by Year:");
+
+        library.orderByYear();
+        library.getSongs().forEach(System.out::println);
     }
 }
