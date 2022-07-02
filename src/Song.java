@@ -1,14 +1,23 @@
 /**
  * Class that represents a song with various information such as title, song gender, song duration.
+ *
+ * @version 1.0.0 2022-07-02
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *         Moises Bernal - moisesb95@hotmail.com
+ *
+ * @since 1.0.0 2022-07-02
+ *
  */
+
 public class Song {
-    private final String title;
+    private String title;
     private int id;
-    private final int year;
-    private final float duration;
-    private final String gender;
-    private final String cover;
-    private final String description;
+    private int year;
+    private float duration;
+    private String gender;
+    private String cover;
+    private String description;
 
     /**
      * Setting up native variables of the song object with the following information:

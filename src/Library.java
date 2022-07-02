@@ -1,13 +1,20 @@
 import java.util.ArrayList;
 
-
 /**
  * Library class which implements playlist interface (abstract methods filterbyGender an filterbyYear)
  * represents a list of song (object) selected by the user
+ *
+ * @version 1.0.0 2022-07-02
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *         Moises Bernal - moisesb95@hotmail.com
+ *
+ * @since 1.0.0 2022-07-02
+ *
  */
 
 public class Library implements PlayList {
-    private final ArrayList<Song> songs;
+    private ArrayList<Song> songs;
 
     public Library(ArrayList<Song> songs) {
         this.songs = songs;

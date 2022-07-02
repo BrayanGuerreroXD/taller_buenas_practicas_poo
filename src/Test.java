@@ -3,18 +3,21 @@ import java.util.ArrayList;
 /**
  * The main class test creates a manually typed song library
  *
- * @author BrayanGuerroXD
- * @author MoisesCol
+ * @version 1.0.0 2022-07-02
+ *
+ * @author Brayan Stewart Guerrero Ordoñez – bg7047653@gmail.com
+ *         Moises Bernal - moisesb95@hotmail.com
+ *
+ * @since 1.0.0 2022-07-02
  *
  */
 
 public class Test {
 
     public static void main(String[] args) {
+        ArrayList<Song> songs = new ArrayList<>();
 
         //manual creation of songs library starts here
-
-        ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("Pumped Up Kicks", 1, 2011,
                 3.59F, "Alternative", "covers/torches_ftp_cover.jpg",
@@ -90,6 +93,14 @@ public class Test {
 
         //end of songs library creation
 
+        Library library = new Library(songs);
 
+        System.out.println("Filtrar por genero:");
+
+        library.filterByGender("Alternative").forEach(System.out::println);
+
+        System.out.println("Filtrar por año:");
+
+        library.filterByYear(2021).forEach(System.out::println);
     }
 }
